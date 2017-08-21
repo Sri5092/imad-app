@@ -36,7 +36,9 @@ function CreateTemplate(data){
 var htmltemplate =`
    <html>
     <head>
-        <title>$title</title>  
+        <title>
+        ${title}
+        </title>  
         <meta name= 'viewport' content = 'width-device-width , initial-scale-1'>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -47,8 +49,8 @@ var htmltemplate =`
                 
             </div>
             <div>
-                 <h1>$heading</h1>
-                 <p>$content</p>
+                 <h1>${heading}</h1>
+                 <p>${content}</p>
              </div>
         </div>
      </Body>    
