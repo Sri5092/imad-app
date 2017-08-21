@@ -7,22 +7,22 @@ app.use(morgan('combined'));
 
 var articles = {
   'articleone': { 
-      'title': 'Srikanth - Article One',
-      'heading': 'My Content For Article 1',
-      'Content': 
+      title: 'Srikanth - Article One',
+      heading: 'My Content For Article 1',
+      Content: 
       `<p> This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First ParagraphThis is my First Paragraph This is my First Paragraph
        </p>`
   }  ,
   'articletwo': { 
-      'title': 'Srikanth - Article One',
-      'heading': 'My Content For Article 1',
-      'Content': 
+      title: 'Srikanth - Article One',
+      heading: 'My Content For Article 1',
+      Content: 
       `<p> This is my 2nd Paragraph
        </p>` }  ,
   'articlethree': { 
-  'title': 'Srikanth - Article Three',
-      'heading': 'My Content For Article 3',
-      'Content': 
+  title: 'Srikanth - Article Three',
+      heading: 'My Content For Article 3',
+      Content: 
       `<p> This is my 3 Paragraph This is my 3 Paragraph This is my 3 Paragraph
        </p>`}
     
