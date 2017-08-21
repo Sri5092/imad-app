@@ -6,20 +6,20 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-  'articleone': { 
+  'article-one': { 
       'title': 'Srikanth - Article One',
       'heading': 'My Content For Article 1',
       'Content': 
       `<p> This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First Paragraph This is my First ParagraphThis is my First Paragraph This is my First Paragraph
        </p>`
   }  ,
-  'articletwo': { 
+  'article-two': { 
       'title': 'Srikanth - Article One',
       'heading': 'My Content For Article 1',
       'Content': 
       `<p> This is my 2nd Paragraph
        </p>` }  ,
-  'articlethree': { 
+  'article-three': { 
   'title': 'Srikanth - Article Three',
       'heading': 'My Content For Article 3',
       'Content': 
@@ -48,7 +48,7 @@ var htmltemplate
             </div>
             <div>
                  <h1>$heading</h1>
-                 <p>$Content</p>
+                 <p>$content</p>
              </div>
         </div>
      </Body>    
