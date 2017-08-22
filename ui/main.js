@@ -20,7 +20,7 @@ button.onclick = function() {
 
 //submit name
 var nameinput = document.getElementById('name');
-var name = nameInput.value;
+var name = nameinput.value;
 var submit = document.getElementById('submit_button');
 submit.onclick = function () {
     var names = ['name1','name2','name3'];
