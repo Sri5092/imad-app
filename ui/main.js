@@ -5,4 +5,4 @@ element.innerHTML = 'New Value';
 var img = document.getElementById('img1');
 img.onclick = function(){
     img.Style.marginLeft = '200px';
-}
+};
