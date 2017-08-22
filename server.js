@@ -84,7 +84,7 @@ app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname,'ui', 'articlethree.html'));
 });
 
-app.get('/.js', function (req, res) {
+app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname,'ui', 'main.js'));
 });
 
