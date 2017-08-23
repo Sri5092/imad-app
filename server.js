@@ -114,7 +114,7 @@ pool.query("SELECT * FROM article WHERE title = '" + req.params.articleName + "'
            res.status(404).send('Article Not Founc');
        }else{
            var articleData = result.rows[0];
-           res.send(CreateTemplate(articles[articleName]));
+           res.send(CreateTemplate(articleData));
        }
    }
 });
