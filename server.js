@@ -59,7 +59,7 @@ var htmltemplate =`
                 
             </div>
             <div>
-            <h4>${date}</h4>
+            <h4>${date.toDateString}</h4>
             </div>
             <div>
                  <h1>${heading}</h1>
