@@ -127,7 +127,7 @@ app.post('/create-user',function(req,res){
    });
 });
 
-app.post('/login',function(req,res) {
+app.post('/login', function(req,res) {
    var username = req.body.username;
    var password = req.body.password;
    
@@ -143,11 +143,11 @@ app.post('/login',function(req,res) {
            var hashedPassword = hash(password,salt);
            if (hashedPassword === dbString){
                res.send('Credentials are correct');
-               
-           } else {
+            } else {
                res.send('Invalid credentials');
            }
        }
+   }
    });
 });
 
