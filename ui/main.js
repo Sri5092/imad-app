@@ -3,8 +3,8 @@
 //submit username/password
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
-var nameinput = document.getElementById('name');
-var name = nameinput.value;
+// var nameinput = document.getElementById('name');
+// var name = nameinput.value;
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
