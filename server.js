@@ -168,9 +168,9 @@ app.get('/check-login',function(req,res){
    }
 });
 
-app.get('/logout',function(req.res){
+app.get('/logout',function(req,res){
    delete req.session.auth;
-   res.send('Logged Out');
+   res.send('Logged out');
 });
 
 app.get('/', function (req, res) {
