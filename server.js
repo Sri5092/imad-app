@@ -4,7 +4,7 @@ var path = require('path');
 var Pool = require('pg').Pool;
 var app = express();
 var crypto = require('crypto');
-var bodyparser = require('body-parser');
+var bodyParser = require('body-parser');
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
