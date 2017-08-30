@@ -5,8 +5,13 @@ var Pool = require('pg').Pool;
 var app = express();
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 app.use(morgan('combined'));
 app.use(bodyParser.json());
+app.use(session({
+    secret: 'someRandomSecretValue',
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
+}));
 
 var config = {
     user: 'sriekanth91',
@@ -142,7 +147,11 @@ app.post('/login', function(req,res) {
            var salt = dbString.split('$')[2];
            var hashedPassword = hash(password,salt);
            if (hashedPassword === dbString){
+               
+               req.session.auth = {userId: result.rows[0].id};
+               
                res.send('Credentials are correct');
+               
             } else {
                res.send('Invalid credentials');
            }
