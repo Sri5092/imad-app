@@ -168,6 +168,11 @@ app.get('/check-login',function(req,res){
    }
 });
 
+app.get('/logout',function(req.res){
+   delete req.session.auth;
+   res.send('Logged Out');
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
